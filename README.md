@@ -60,7 +60,7 @@ screen -Rd avail
 curl -sL1 avail.sh | bash
 ```
 
-- Save Address wallet dan Private key, lalu copy private key ke register yang nomor 4 tadi di atas, kemudian mint nft nya
+- Save Address wallet dan Public key, lalu copy private key ke register yang nomor 4 tadi di atas, kemudian mint nft nya
 
 - Done
 
