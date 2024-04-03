@@ -1,6 +1,4 @@
 
-#Testnet Node Avail (Light Client)
-
 <p align="center">
   <img width="auto" height="auto" src="https://miro.medium.com/v2/resize:fit:1400/0*KCb_CCSoSeis6uy2.jpeg">
 </p>
