@@ -83,3 +83,12 @@ screen -r <namascreen>
 Screen -X -S <namascreen> kill
 ```
 
+## Cek Latest Block
+```
+curl "http://localhost:7000/v1/latest_block"
+```
+
+## Health Check
+```
+curl -I "localhost:7000/health"
+```
