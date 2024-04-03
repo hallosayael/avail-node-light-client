@@ -9,7 +9,7 @@ Testnet Node Avail (Light Client)
 
 ## 1. Membuat wallet
 
-Anda bisa membuat wallet di:
+Kamu bisa membuat wallet di:
 
 * SubWallet
 * Polkadot.js
