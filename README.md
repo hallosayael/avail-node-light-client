@@ -1,5 +1,5 @@
 
-Testnet Node Avail (Light Client)
+#Testnet Node Avail (Light Client)
 
 <p align="center">
   <img width="auto" height="auto" src="https://miro.medium.com/v2/resize:fit:1400/0*KCb_CCSoSeis6uy2.jpeg">
@@ -28,7 +28,7 @@ Berikut adalah persyaratan **minimum** untuk menjalankan node AVAIL:
  -  **RAM**     : Memori 4GB
  -  **STORAGE** : 200GB
 
-# Instal Otomatis
+## Instal Otomatis
 
 ```
 apt update && apt upgrade -y
@@ -44,7 +44,7 @@ apt install -y build-essential
 apt install -y curl
 ```
 
-# Instal Screen
+## Instal Screen
 
 ```
 sudo apt install screen
@@ -56,7 +56,7 @@ sudo apt install screen
 screen -Rd avail
 ```
 
-# Run node
+## Run node
 
 ```
 curl -sL1 avail.sh | bash
@@ -70,17 +70,17 @@ curl -sL1 avail.sh | bash
 
 ---------------------------------------------------------------------------------------------------------------
 
-# Melihat daftar screen yang kita punya
+## Melihat daftar screen yang kita punya
 ```
 screen -ls
 ```
 
-# Membuka log screen
+## Membuka log screen
 ```
 screen -r <namascreen>
 ```
 
-# Remove screen
+## Remove screen
 ```
 Screen -X -S <namascreen> kill
 ```
