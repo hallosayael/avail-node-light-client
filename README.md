@@ -68,7 +68,8 @@ curl -sL1 avail.sh | bash
 
 - Kamu bisa menggunakan keyboard **CTRL+A+D** untuk keluar dari screen nya tanpa membuat node kamu berhenti
 
-**KAMUS**
+---------------------------------------------------------------------------------------------------------------
+
 # Melihat daftar screen yang kita punya
 ```
 screen -ls
