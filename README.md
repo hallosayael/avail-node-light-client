@@ -67,6 +67,40 @@ curl -sL1 avail.sh | bash
 - Kamu bisa menggunakan keyboard **CTRL+A+D** untuk keluar dari screen nya tanpa membuat node kamu berhenti
 
 ---------------------------------------------------------------------------------------------------------------
+## AUTO CONNECT
+
+- Ketika sudah membuat screen, lanjutkan dengan command dibawah ini agar re-run / auto connect ketika ada kegagalan rpc
+ ```
+sudo tee /etc/systemd/system/avail.service > /dev/null <<EOF
+[Unit]
+Description=avail Daemon
+After=network-online.target
+[Service]
+User=$USER
+ExecStart=/root/.avail/bin/avail-light --config /root/.avail/config/config.yml --app-id 0 --identity /root/.avail/identity/identity.toml --network goldberg
+Restart=always
+RestartSec=3
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+'''
+sudo systemctl enable avail
+'''
+'''
+sudo systemctl start avail
+'''
+'''
+sudo systemctl status avail
+'''
+## Tekan dengan keyboard CTRL+C, lalu copas command dibawah ini
+'''
+journalctl -f -u avail
+'''
+## DONE
+- Silahkan tekan CTRL+A+D, untuk keluar dari screen (program tetap berjalan)
+---------------------------------------------------------------------------------------------------------------
 
 ## Melihat daftar screen yang kita punya
 ```
