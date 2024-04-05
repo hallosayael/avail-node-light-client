@@ -70,7 +70,7 @@ curl -sL1 avail.sh | bash
 ## AUTO CONNECT
 
 - Ketika sudah membuat screen, lanjutkan dengan command dibawah ini agar re-run / auto connect ketika ada kegagalan rpc
- ```
+```
 sudo tee /etc/systemd/system/avail.service > /dev/null <<EOF
 [Unit]
 Description=avail Daemon
@@ -85,19 +85,19 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-'''
+```
 sudo systemctl enable avail
-'''
-'''
+```
+```
 sudo systemctl start avail
-'''
-'''
+```
+```
 sudo systemctl status avail
-'''
+```
 ## Tekan dengan keyboard CTRL+C, lalu copas command dibawah ini
-'''
+```
 journalctl -f -u avail
-'''
+```
 ## DONE
 - Silahkan tekan CTRL+A+D, untuk keluar dari screen (program tetap berjalan)
 ---------------------------------------------------------------------------------------------------------------
